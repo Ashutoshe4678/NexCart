@@ -3,9 +3,17 @@ import axios from 'axios';
 // Smart API Base resolver: Localhost -> 5000, Deployed -> Render Backend API
 const isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
-const API_BASE = import.meta.env.VITE_API_URL || (isLocal ? 'http://localhost:5000/api' : 'https://snapbasket-backend.onrender.com/api');
+let rawUrl = import.meta.env.VITE_API_URL || (isLocal ? 'http://localhost:5000/api' : 'https://snapbasket-backend.onrender.com/api');
 
-console.log('⚡ SnapBasket API Target Endpoint:', API_BASE);
+// Sanitize URL: remove trailing slashes and ensure /api suffix
+rawUrl = rawUrl.trim().replace(/\/+$/, '');
+if (!rawUrl.endsWith('/api')) {
+  rawUrl = `${rawUrl}/api`;
+}
+
+const API_BASE = rawUrl;
+
+console.log('⚡ SnapBasket Sanitized API Base:', API_BASE);
 
 export const fetchProducts = async (category = 'All', search = '') => {
   try {
