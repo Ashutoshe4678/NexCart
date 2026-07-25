@@ -23,19 +23,19 @@ SnapBasket is a full-stack MERN quick-commerce grocery delivery platform inspire
 ## 📸 Screenshots
 
 ### 🏠 Customer Storefront & Product Catalog
-![Customer Storefront](https://raw.githubusercontent.com/Ashutoshe4678/Snap-Basket/main/frontend/public/screenshot-store.png)
+![Customer Storefront](./screenshots/home.png)
 
 ### 🛒 Slide-Out Cart Drawer & Bill Breakdown
-![Cart Drawer](https://raw.githubusercontent.com/Ashutoshe4678/Snap-Basket/main/frontend/public/screenshot-cart.png)
+![Cart Drawer](./screenshots/cart.png)
 
 ### ⏱️ 10-Minute Live Order Tracking & 5-Stage Timeline
-![Live Order Tracking](https://raw.githubusercontent.com/Ashutoshe4678/Snap-Basket/main/frontend/public/screenshot-tracker.png)
+![Live Order Tracking](./screenshots/tracker.png)
 
 ### 🛠️ Store Admin Operations Dashboard
-![Admin Dashboard](https://raw.githubusercontent.com/Ashutoshe4678/Snap-Basket/main/frontend/public/screenshot-admin.png)
+![Admin Dashboard](./screenshots/admin.png)
 
 ### 🛵 Delivery Partner (Rider) Console
-![Rider Console](https://raw.githubusercontent.com/Ashutoshe4678/Snap-Basket/main/frontend/public/screenshot-rider.png)
+![Rider Console](./screenshots/rider.png)
 
 ---
 
@@ -101,6 +101,7 @@ SnapBasket/
 │   ├── index.html
 │   └── vite.config.js
 │
+├── screenshots/                  # App Screenshots (home, cart, tracker, admin, rider)
 └── README.md
 ```
 
