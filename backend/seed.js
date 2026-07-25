@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const seedDB = async () => {
   try {
-    const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/snapbasket';
+    const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/nexcart';
     await mongoose.connect(mongoURI);
     console.log('Connected to MongoDB...');
 

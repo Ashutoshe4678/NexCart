@@ -13,7 +13,7 @@ if (!rawUrl.endsWith('/api')) {
 
 const API_BASE = rawUrl;
 
-console.log('⚡ SnapBasket Sanitized API Base:', API_BASE);
+console.log('⚡ NexCart Sanitized API Base:', API_BASE);
 
 export const fetchProducts = async (category = 'All', search = '') => {
   try {

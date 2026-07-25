@@ -49,7 +49,7 @@ exports.createOrder = async (req, res) => {
       return res.status(400).json({ message: 'Cart items cannot be empty' });
     }
 
-    const orderId = `SB-${Math.floor(100000 + Math.random() * 900000)}`;
+    const orderId = `NC-${Math.floor(100000 + Math.random() * 900000)}`;
 
     const orderPayload = {
       orderId,

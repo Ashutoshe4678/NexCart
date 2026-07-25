@@ -4,7 +4,7 @@ const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(() => {
-    const saved = localStorage.getItem('snapbasket_cart');
+    const saved = localStorage.getItem('nexcart_cart');
     return saved ? JSON.parse(saved) : [];
   });
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -14,7 +14,7 @@ export const CartProvider = ({ children }) => {
   const [userRole, setUserRole] = useState('Customer'); // 'Customer' | 'Store Admin' | 'Delivery Partner' | 'Super Admin'
 
   useEffect(() => {
-    localStorage.setItem('snapbasket_cart', JSON.stringify(cartItems));
+    localStorage.setItem('nexcart_cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   const addToCart = (product) => {
