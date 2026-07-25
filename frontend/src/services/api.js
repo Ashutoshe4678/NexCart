@@ -5,6 +5,8 @@ const isLocal = typeof window !== 'undefined' && (window.location.hostname === '
 
 const API_BASE = import.meta.env.VITE_API_URL || (isLocal ? 'http://localhost:5000/api' : 'https://snapbasket-backend.onrender.com/api');
 
+console.log('⚡ SnapBasket API Target Endpoint:', API_BASE);
+
 export const fetchProducts = async (category = 'All', search = '') => {
   try {
     const response = await axios.get(`${API_BASE}/products`, {
@@ -12,7 +14,7 @@ export const fetchProducts = async (category = 'All', search = '') => {
     });
     return response.data;
   } catch (error) {
-    console.error('Error fetching products:', error);
+    console.error('Error fetching products from:', API_BASE, error);
     return [];
   }
 };
