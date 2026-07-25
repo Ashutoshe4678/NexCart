@@ -15,8 +15,8 @@ SnapBasket is a full-stack MERN quick-commerce grocery delivery platform inspire
 
 ## 🚀 Live Demo
 
-- **Frontend Web App**: [https://snapbasket.vercel.app](https://snapbasket.vercel.app)
-- **Backend API**: [https://snapbasket-api.onrender.com](https://snapbasket-api.onrender.com)
+- **Frontend Web App**: [https://snap-basket-wine.vercel.app](https://snap-basket-wine.vercel.app)
+- **Backend API**: [https://snapbasket-backend.onrender.com](https://snapbasket-backend.onrender.com)
 
 ---
 
