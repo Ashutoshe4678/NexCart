@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
+// Smart API Base resolver: Localhost -> 5000, Deployed -> Render Backend API
+const isLocal = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+const API_BASE = import.meta.env.VITE_API_URL || (isLocal ? 'http://localhost:5000/api' : 'https://snapbasket-backend.onrender.com/api');
 
 export const fetchProducts = async (category = 'All', search = '') => {
   try {
