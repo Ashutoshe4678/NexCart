@@ -203,7 +203,7 @@ export default function OrderTracker({ setViewMode }) {
             </div>
             <div>
               <div style={{ fontWeight: '800', fontSize: '15px' }}>
-                {activeOrder.riderName || 'Vikram Kumar'} (Assigned Rider)
+                {activeOrder.riderName || 'Vikram Kumar'} (NexCart Partner)
               </div>
               <div style={{ fontSize: '13px', color: '#64748b' }}>
                 ⚡ EV Scooter | {activeOrder.riderPhone || '+91 98112 33445'}

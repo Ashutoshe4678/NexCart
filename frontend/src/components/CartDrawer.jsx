@@ -76,7 +76,7 @@ export default function CartDrawer({ setViewMode }) {
         {/* Drawer Header */}
         <div className="drawer-header">
           <div className="drawer-title">
-            🛒 My Snap Basket
+            🛒 My NexCart
           </div>
           <button className="close-btn" onClick={() => setIsCartOpen(false)}>
             <X size={18} />

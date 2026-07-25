@@ -1,4 +1,4 @@
-# 🛒 SnapBasket
+# 🛒 NexCart
 > A Full-Stack Quick-Commerce Grocery Delivery Platform built with the MERN Stack.
 
 [![React](https://img.shields.io/badge/Frontend-React%2018-61DAFB?logo=react)](https://reactjs.org/)
@@ -9,7 +9,7 @@
 
 ## 📌 Project Overview
 
-SnapBasket is a full-stack MERN quick-commerce grocery delivery platform inspired by Blinkit, Zepto, and Instamart. It simulates a 10-minute grocery delivery experience with role-based access control (RBAC), real-time order tracking using Socket.io, inventory management, and dedicated workflows for customers, admins, and riders.
+NexCart is a full-stack MERN quick-commerce grocery delivery platform inspired by Blinkit, Zepto, and Instamart. It simulates a 10-minute grocery delivery experience with role-based access control (RBAC), real-time order tracking using Socket.io, inventory management, and dedicated workflows for customers, admins, and riders.
 
 ---
 
@@ -74,7 +74,7 @@ SnapBasket is a full-stack MERN quick-commerce grocery delivery platform inspire
 ## 📁 Folder Structure
 
 ```
-SnapBasket/
+NexCart/
 ├── backend/
 │   ├── config/
 │   │   └── db.js                 # Database connection & fallback engine
@@ -147,7 +147,7 @@ Create a `.env` file inside the `backend/` directory:
 PORT=5000
 
 # Database Connection String
-MONGODB_URI=mongodb://127.0.0.1:27017/snapbasket
+MONGODB_URI=mongodb://127.0.0.1:27017/nexcart
 
 # Node Environment
 NODE_ENV=development

@@ -78,7 +78,7 @@ export default function AdminDashboard() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <h2 style={{ fontSize: '24px', fontWeight: '800' }}>🛠️ SnapBasket Store Operations</h2>
+            <h2 style={{ fontSize: '24px', fontWeight: '800' }}>🛠️ NexCart Store Operations</h2>
             <span style={{
               background: '#0f172a',
               color: 'white',

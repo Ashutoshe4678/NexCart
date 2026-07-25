@@ -23,12 +23,12 @@ app.use('/api/orders', orderRoutes);
 // Root Endpoint
 app.get('/', (req, res) => {
   res.json({
-    message: '⚡ Welcome to SnapBasket Ultra-Fast Grocery API',
+    message: '⚡ Welcome to NexCart Ultra-Fast Grocery API',
     status: 'Operational',
     version: '1.0.0'
   });
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 SnapBasket Backend Server running at http://localhost:${PORT}`);
+  console.log(`🚀 NexCart Backend Server running at http://localhost:${PORT}`);
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, Search, MapPin, Zap, Shield, User, Bike, Store, ShieldCheck } from 'lucide-react';
+import { ShoppingBag, Search, MapPin, Zap, Shield, User, Bike, Store, ShieldCheck, ShoppingCart } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 export default function Header({ searchQuery, setSearchQuery, viewMode, setViewMode }) {
@@ -19,23 +19,25 @@ export default function Header({ searchQuery, setSearchQuery, viewMode, setViewM
   return (
     <header className="header">
       <div className="header-container">
-        {/* Brand Logo */}
+        {/* Fancy Brand Logo - NexCart */}
         <div className="logo-area" onClick={() => { setUserRole('Customer'); setViewMode('store'); }}>
-          <div className="brand-icon">⚡</div>
+          <div className="brand-icon" style={{ background: 'linear-gradient(135deg, #4f46e5 0%, #10b981 100%)', boxShadow: '0 4px 14px rgba(79, 70, 229, 0.35)' }}>
+            🛒
+          </div>
           <div className="brand-title">
-            Snap<span>Basket</span>
+            Nex<span style={{ color: '#4f46e5' }}>Cart</span>
           </div>
         </div>
 
         {/* 10 Min Delivery Badge */}
-        <div className="delivery-badge">
-          <Zap size={14} className="fill-amber-500 text-amber-500" />
+        <div className="delivery-badge" style={{ background: '#eef2ff', borderColor: '#c7d2fe', color: '#3730a3' }}>
+          <Zap size={14} className="fill-indigo-600 text-indigo-600" />
           <span>Delivery in 10 Mins</span>
         </div>
 
         {/* Address Selector */}
         <div className="address-selector" title="Change Address">
-          <MapPin size={16} className="text-emerald-600" />
+          <MapPin size={16} className="text-indigo-600" />
           <div>
             <strong style={{ display: 'block', fontSize: '12px' }}>Home</strong>
             <span style={{ fontSize: '12px', color: '#64748b' }}>{deliveryAddress}</span>
@@ -76,7 +78,7 @@ export default function Header({ searchQuery, setSearchQuery, viewMode, setViewM
                 key={r.id}
                 onClick={() => handleRoleChange(r.id)}
                 style={{
-                  background: isActive ? '#0f172a' : 'transparent',
+                  background: isActive ? '#4f46e5' : 'transparent',
                   color: isActive ? 'white' : '#64748b',
                   border: 'none',
                   padding: '6px 12px',
@@ -108,7 +110,7 @@ export default function Header({ searchQuery, setSearchQuery, viewMode, setViewM
             </button>
           )}
 
-          <button className="cart-button" onClick={() => setIsCartOpen(true)}>
+          <button className="cart-button" style={{ background: 'linear-gradient(135deg, #4f46e5 0%, #3730a3 100%)', boxShadow: '0 4px 14px rgba(79, 70, 229, 0.35)' }} onClick={() => setIsCartOpen(true)}>
             <ShoppingBag size={18} />
             <span>{totalItemCount > 0 ? `${totalItemCount} Items` : 'My Cart'}</span>
             {grandTotal > 0 && <span style={{ opacity: 0.9 }}>| ₹{grandTotal}</span>}
