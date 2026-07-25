@@ -1,7 +1,7 @@
 {
   "name": "nexcart-backend",
   "version": "1.0.0",
-  "description": "SnapBasket Grocery Delivery MERN API",
+  "description": "NexCart Grocery Delivery MERN API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

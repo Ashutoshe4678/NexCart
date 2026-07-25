@@ -1,7 +1,7 @@
 {
   "name": "nexcart-root",
   "version": "1.0.0",
-  "description": "SnapBasket MERN Ultra-Fast Grocery App",
+  "description": "NexCart MERN Quick-Commerce Grocery App",
   "scripts": {
     "start:backend": "cd backend && npm start",
     "start:frontend": "cd frontend && npm run dev",

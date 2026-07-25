@@ -116,8 +116,8 @@ NexCart/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Ashutoshe4678/Snap-Basket.git
-cd Snap-Basket
+git clone https://github.com/Ashutoshe4678/NexCart.git
+cd NexCart
 ```
 
 ### 2. Install & Start Backend
@@ -168,4 +168,4 @@ NODE_ENV=development
 
 **Ashutosh**
 - **GitHub**: [@Ashutoshe4678](https://github.com/Ashutoshe4678)
-- **Project Repository**: [Snap-Basket](https://github.com/Ashutoshe4678/Snap-Basket)
+- **Project Repository**: [NexCart](https://github.com/Ashutoshe4678/NexCart)
