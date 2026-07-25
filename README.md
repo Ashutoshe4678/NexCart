@@ -15,8 +15,8 @@ NexCart is a full-stack MERN quick-commerce grocery delivery platform inspired b
 
 ## 🚀 Live Demo
 
-- **Frontend Web App**: [https://nexcart-grocery.vercel.app](https://nexcart-grocery.vercel.app)
-- **Backend API**: [https://nexcart-backend.onrender.com](https://nexcart-backend.onrender.com)
+- **Frontend Web App**: [https://nex-cart-seven.vercel.app](https://nex-cart-seven.vercel.app)
+- **Backend API**: [https://nexcart-backend-3nbq.onrender.com](https://nexcart-backend-3nbq.onrender.com)
 
 ---
 
